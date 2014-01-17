@@ -23,9 +23,7 @@ fn is_fifteen(num: int) -> bool {
 
 #[test]
 fn test_is_five_with_not_five() {
-  if is_five(1) {
-    fail!("One is not five!")
-  }
+  if is_five(1) { fail!("One is not five!") }
 }
 
 #[test]
@@ -35,9 +33,7 @@ fn test_is_five_with_five() {
 
 #[test]
 fn test_is_fifteen_with_not_fifteen() {
-  if is_fifteen(1) {
-    fail!("One is not fifteen!")
-  }
+  if is_fifteen(1) { fail!("One is not fifteen!") }
 }
 
 #[test]
@@ -47,9 +43,7 @@ fn test_is_fifteen_with_fifteen() {
 
 #[test]
 fn test_is_three_with_not_three() {
-  if is_three(1) {
-    fail!("One is not three!")
-  }
+  if is_three(1) { fail!("One is not three!") }
 }
 
 #[test]

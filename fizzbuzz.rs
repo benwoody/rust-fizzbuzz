@@ -1,11 +1,9 @@
 fn main() {
   for num in range(1, 101) {
-    println(
-      if is_fifteen(num) { ~"FizzBuzz" }
-      else if is_three(num) { ~"Fizz" }
-      else if is_five(num) { ~"Buzz" }
-      else {num.to_str() }
-    );
+    if is_fifteen(num) { println!("FizzBuzz"); }
+    else if is_three(num) { println!("Fizz"); }
+    else if is_five(num) { println!("Buzz"); }
+    else { println!("{:d}", num); }
   }
 }
 
@@ -34,6 +32,8 @@ fn test_is_five_with_five() {
 #[test]
 fn test_is_fifteen_with_not_fifteen() {
   if is_fifteen(1) { fail!("One is not fifteen!") }
+  else if is_fifteen(5) { fail!("Five is not fifteen!") }
+  else if is_fifteen(3) { fail!("Three is not fifteen!") }
 }
 
 #[test]
